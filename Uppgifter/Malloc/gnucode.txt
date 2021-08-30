@@ -1,0 +1,9 @@
+set terminal png
+set output "Fall2.png"
+set yrange [0:280000]  
+set title "Number of merges benchmark 2"
+set style data histogram
+set style fill solid
+set style histogram clustered
+set linetype 1 lc rgb "grey"
+plot "Fall2.dat" using 2:xtic(1) title "benchmark 2"
